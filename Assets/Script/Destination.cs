@@ -17,6 +17,7 @@ public class Destination : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other) {
         Kim_Behaviour kim = other.GetComponent<Kim_Behaviour>();
+        
         if(kim != null) {
            pool.Kill(kim);
         }

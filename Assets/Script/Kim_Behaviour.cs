@@ -32,7 +32,13 @@ public class Kim_Behaviour : MonoBehaviour
     
     void OnMouseDown() {
         //Destroy(gameObject);
-        pool.Kill(this);
+        //pool.Kill(this);
+        GetComponent<Renderer>().material.color = Color.black;
+    }
+
+    public void Restore()
+    {
+        GetComponent<Renderer>().material.color = Color.red;
     }
     
 

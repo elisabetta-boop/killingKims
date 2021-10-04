@@ -30,6 +30,7 @@ public class Pool : MonoBehaviour
     }
     public void Kill(Kim_Behaviour kim)
     {
+        kim.Restore();
         kim.gameObject.SetActive(false);
         kims.Add(kim);
     }
