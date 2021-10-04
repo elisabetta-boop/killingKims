@@ -10,11 +10,12 @@ public class Kim_Behaviour : MonoBehaviour
     //private NavMeshAgent agent;
     //private Destination destinationDie;
     public Vector3 destination;
+    private Pool pool;
     
     void Start()
     {
         //agent = GetComponent<NavMeshAgent>();
-        GetComponent<NavMeshAgent>().SetDestination(destination);
+        pool = FindObjectOfType<Pool>();
     }
     
     // public void SetDestination(Destination destination)
@@ -26,11 +27,12 @@ public class Kim_Behaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<NavMeshAgent>().SetDestination(destination);
     }
     
     void OnMouseDown() {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        pool.Kill(this);
     }
     
 
