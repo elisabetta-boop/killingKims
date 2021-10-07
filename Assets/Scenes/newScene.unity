@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 1585835914}
   - component: {fileID: 1585835918}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: KillingZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94d35dd2db8a8d40a6694407a55763c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  pool: {fileID: 228016539}
 --- !u!1 &1932436292
 GameObject:
   m_ObjectHideFlags: 0
